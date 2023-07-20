@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jj zjh, jj, LIC=1WSEV-P4HTT-ZDSK6-D4CD7-R17VV-HNP1S
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  E:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\zjh\OneDrive\桌面\HAHAHA\MDK-ARM\HAHAHA.uvprojx
+Project File Date:  07/19/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'E:\keil5\ARM\ARMCC\Bin'
+Rebuild target 'HAHAHA'
+assembling startup_stm32l4r9xx.s...
+compiling stm32l4xx_it.c...
+compiling usart.c...
+compiling dma.c...
+compiling adc.c...
+compiling gpio.c...
+compiling main.c...
+../Core/Src/main.c(133): warning:  #223-D: function "OLED_Init" declared implicitly
+    OLED_Init();			//??始化OLED  
+../Core/Src/main.c(134): warning:  #223-D: function "OLED_Clear" declared implicitly
+  	OLED_Clear(0); 
+../Core/Src/main.c(140): warning:  #223-D: function "DHT11_Rst" declared implicitly
+  	DHT11_Rst();
+../Core/Src/main.c(210): warning:  #223-D: function "DHT11_Read_Data" declared implicitly
+       DHT11_Read_Data(&humidity,&temperature);     //?觳獬???湿?鹊?值
+../Core/Src/main.c(211): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  		OLED_ShowString(0,2,"WENDU:",16);
+../Core/Src/main.c(213): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  		OLED_ShowNum(55,2,humidity,4,16);
+../Core/Src/main.c: 6 warnings, 0 errors
+compiling stm32l4xx_hal_msp.c...
+compiling tim.c...
+compiling stm32l4xx_hal_rcc.c...
+compiling stm32l4xx_hal.c...
+compiling stm32l4xx_hal_adc_ex.c...
+compiling oled.c...
+oled.h(91): warning:  #1-D: last line of file ends without a newline
+  #endif
+oled.c(62): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SCLK_Set() ;
+oled.c(63): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SDIN_Set();
+oled.c(64): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SDIN_Clr();
+oled.c(65): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SCLK_Clr();
+oled.c(73): warning:  #188-D: enumerated type mixed with another type
+  
+LED_SCLK_Set() ;
+oled.c(75): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SDIN_Clr();
+oled.c(76): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SDIN_Set();
+oled.c(99): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SCLK_Set() ;
+oled.c(100): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SCLK_Clr();
+oled.c(111): warning:  #188-D: enumerated type mixed with another type
+  	
+LED_SCLK_Clr();
+oled.c(118): warning:  #188-D: enumerated type mixed with another type
+  		{
+LED_SDIN_Set();}
+oled.c(119): warning:  #188-D: enumerated type mixed with another type
+  		else 
+LED_SDIN_Clr();
+oled.c(121): warning:  #188-D: enumerated type mixed with another type
+  		
+LED_SCLK_Set();
+oled.c(122): warning:  #188-D: enumerated type mixed with another type
+  		
+LED_SCLK_Clr();
+oled.c: 15 warnings, 0 errors
+compiling dht11.c...
+dht11.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /*__ GPIO_H__ */
+dht11.c: 1 warning, 0 errors
+compiling stm32l4xx_hal_adc.c...
+compiling stm32l4xx_hal_rcc_ex.c...
+compiling stm32l4xx_hal_dma_ex.c...
+compiling stm32l4xx_hal_flash_ex.c...
+compiling stm32l4xx_hal_cortex.c...
+compiling stm32l4xx_hal_pwr_ex.c...
+compiling stm32l4xx_hal_exti.c...
+compiling stm32l4xx_hal_gpio.c...
+compiling stm32l4xx_hal_flash.c...
+compiling stm32l4xx_hal_uart_ex.c...
+compiling stm32l4xx_hal_flash_ramfunc.c...
+compiling system_stm32l4xx.c...
+compiling stm32l4xx_hal_tim.c...
+compiling stm32l4xx_hal_dma.c...
+compiling stm32l4xx_hal_pwr.c...
+compiling stm32l4xx_hal_tim_ex.c...
+compiling stm32l4xx_hal_uart.c...
+linking...
+Program Size: Code=21210 RO-data=2662 RW-data=20 ZI-data=2132  
+FromELF: creating hex file...
+"HAHAHA\HAHAHA.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM.CMSIS.4.5.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.2.pack
+                Keil.STM32L4xx_DFP.2.6.2
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HAHAHA
+  E:\keil5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  E:\keil5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.2\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:41
+</pre>
+</body>
+</html>
